@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Temperature = function (c) {
+        this.do_c = c;
+        this.getF = function () {
+           return c*1.8 + 32;
+        }
+        this.getK = function () {
+            return c+273;
+        }
+    }
+    let temperature = new Temperature(25);
+    let getf = temperature.getF() ;
+    let getKenvin = temperature.getK();
+    alert("do F la: " + getf);
+    alert("do K la: " + getKenvin);
+</script>
+</body>
+</html>
